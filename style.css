@@ -1,0 +1,34 @@
+.header {
+  position: absolute;
+  background: #242121, 100%;
+  width: 375px;
+  height: 718px;
+  left: 0px;
+  top: 0px;
+}
+
+.nav {
+  display: block;
+  margin: 2em 0 0 2em;
+  width: 50 px;
+}
+
+.backimg {
+  display: flex;
+  background: url(/img/header-shapes\ mobile@2x.svg) no-repeat top/cover;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.icons {
+  display: flex;
+  position: relative;
+  top: -200px;
+}
