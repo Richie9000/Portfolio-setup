@@ -9,7 +9,7 @@
 
 .backimg {
   display: flex;
-  background: url(/img/header-shapes\ mobile@2x.svg) no-repeat top/cover;
+  background: url(./img/header-shapes\ mobile@2x.svg) no-repeat top/cover;
   height: 100vh;
   justify-content: center;
   flex-direction: column;
@@ -21,8 +21,40 @@
   margin: 20px;
 }
 
-.icons {
+ul.icons {
   display: flex;
+  flex-direction: row;
+  justify-content: start;
   position: relative;
-  top: -200px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.active {
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6070ff;
+}
+
+.title2 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.list1 {
+  padding-left: 1%;
+}
+
+.cont {
+  flex: display;
 }
