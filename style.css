@@ -10,8 +10,10 @@
   display: flex;
   justify-content: space-between;
 }
+
 .cont {
   width: 60%;
+  font-family: sans-serif;
 }
 
 .icons {
@@ -47,13 +49,12 @@ h1 {
 }
 
 .para {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   padding: 0 24px 0 24px;
-
   color: #344563;
 }
 
@@ -61,25 +62,21 @@ h1 {
   padding-left: 1%;
 }
 
-.cont {
-  flex: auto;
-}
-
 .top .toggleNav {
   margin-right: 20px;
   margin-top: 15px;
 }
+
 a {
   text-decoration: none;
 }
 
 .connect {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   padding-left: 24px;
-
   color: #7f8cff;
 }
