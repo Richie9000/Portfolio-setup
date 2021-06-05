@@ -86,9 +86,9 @@ a {
   padding-left: 24px;
   color: #7f8cff;
 }
+
 .works {
   background: #e5e5e5;
-
   border-top: 1px solid white;
 }
 
@@ -112,7 +112,7 @@ a {
 }
 
 .titlep1 {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -121,7 +121,7 @@ a {
 }
 
 .titlep1 h2 {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -176,7 +176,7 @@ a {
 }
 
 .snip1 {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -213,7 +213,7 @@ a {
 }
 
 .para-about {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -275,7 +275,7 @@ a {
   font-size: 20px;
   line-height: 24px;
   align-items: center;
-  color: #000000;
+  color: #000;
   margin-left: 16px;
 }
 
@@ -283,10 +283,12 @@ a {
   padding-left: 64px;
   margin-left: 64px;
 }
+
 .arrow1 {
   padding-left: 64px;
   margin-left: 64px;
 }
+
 .arrow2 {
   padding-left: 64px;
   margin-left: 64px;
