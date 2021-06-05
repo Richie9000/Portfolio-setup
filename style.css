@@ -88,6 +88,7 @@ a {
 }
 
 .works {
+  display: grid;
   background: #e5e5e5;
   border-top: 1px solid white;
 }
@@ -173,6 +174,7 @@ a {
   margin: 0 16px;
   align-items: center;
   padding-left: 8px;
+  list-style: none;
 }
 
 .snip1 {
