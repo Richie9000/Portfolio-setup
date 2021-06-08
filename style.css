@@ -305,3 +305,37 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+.contactimg {
+  display: flex;
+  background: url(./img/Contact.png) no-repeat top/cover;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+.deco {
+  display: flex;
+  background: url(./img/contact-shapes.png);
+}
+
+.contact-par {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin: 0 24px 0 24px;
+}
+
+.list1 {
+  display: flex;
+  margin: 24px;
+  height: 30px;
+}
+
+.list2 {
+  margin: 24px;
+}
