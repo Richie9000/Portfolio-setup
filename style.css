@@ -315,6 +315,7 @@ a {
 
 .contact-par {
   font-family: Poppins, sans-serif;
+  text-align: center;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -328,7 +329,7 @@ form input {
   display: flex;
   margin: 15px;
   height: 30px;
-  width: 300px;
+  width: 265px;
   border-radius: 8px;
   border: 0;
   padding: 0 0 0 10px;
@@ -353,7 +354,7 @@ form ul {
 }
 
 form textarea {
-  width: 300px;
+  width: 265px;
   height: 100px;
   border-radius: 8px;
   text-decoration: none;
