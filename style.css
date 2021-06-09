@@ -307,17 +307,10 @@ a {
 }
 
 .contactimg {
-  display: flex;
   background: url(./img/Contact.png) no-repeat top/cover;
-  height: 100vh;
   justify-content: center;
   flex-direction: column;
   padding-bottom: 100px;
-}
-
-.deco {
-  display: flex;
-  background: url(./img/contact-shapes.png);
 }
 
 .contact-par {
@@ -328,11 +321,12 @@ a {
   line-height: 24px;
   color: rgb(223, 223, 223);
   margin: 0 38px 0 38px;
+  margin-bottom: 50px;
 }
 
 form input {
   display: flex;
-  margin: 24px;
+  margin: 15px;
   height: 30px;
   width: 300px;
   border-radius: 8px;
@@ -347,8 +341,11 @@ form input {
 .contact-title h4 {
   text-align: center;
   font-size: 30px;
+  font-weight: bold;
   color: white;
-  font-family: poppins;
+  font-family: Poppins, sans-serif;
+  margin-top: 20px;
+  padding-top: 80px;
 }
 
 form ul {
@@ -361,9 +358,14 @@ form textarea {
   border-radius: 8px;
   text-decoration: none;
   padding: 15px 0 0 15px;
-  margin-left: 22px;
+  margin-left: 12px;
 }
 
 .background-div {
   background: url(/img/contact-shapes.png) no-repeat top/cover;
+}
+
+.bar-1 {
+  display: flex;
+  align-items: left;
 }
