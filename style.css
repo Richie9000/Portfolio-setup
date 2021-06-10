@@ -382,3 +382,29 @@ form textarea {
   display: flex;
   justify-content: center;
 }
+
+@media only screen and (min-width: 768px) {
+  .toggleNav {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  nav ul li {
+    margin: 5px;
+    padding: 5px;
+  }
+
+  nav ul li a {
+    color: #344563;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
