@@ -249,7 +249,7 @@ a {
 .main-menu p {
   font-family: Poppins, sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bolder;
   font-size: 20px;
   line-height: 24px;
   align-items: center;
@@ -300,6 +300,13 @@ a {
   margin-bottom: 50px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
 form input {
   display: flex;
   margin: 15px 15px 15px 25px;
@@ -316,8 +323,8 @@ form input {
 
 .contact-title h4 {
   text-align: center;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: bolder;
   color: white;
   font-family: Poppins, sans-serif;
   margin-top: 20px;
@@ -326,6 +333,7 @@ form input {
 
 form ul {
   text-decoration: none;
+  list-style: none;
 }
 
 form textarea {
@@ -420,11 +428,16 @@ form textarea {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 750px;
+    height: 496px;
+    width: 1156px;
+    margin-top: 142px;
+    margin-bottom: 140px;
+    margin-left: 8vw;
   }
 
   .image-section img {
-    width: 454px;
+    width: 42vw;
+    margin-top: 1px;
   }
 
   .card-w2 {
@@ -432,7 +445,113 @@ form textarea {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    height: 750px;
+    height: 496px;
+    width: 1156px;
+    margin-top: 142px;
+    margin-bottom: 140px;
+    margin-left: 8vw;
+  }
+
+  .about-myself {
+    display: grid;
+    background: url(./img/about.png) no-repeat top/cover;
+    grid-template-columns: 50% 50%;
+    border-top: 1px solid white;
+    list-style: none;
+  }
+
+  .card-img {
+    margin-bottom: 55px;
+    margin-left: 25px;
+  }
+
+  .card-text {
+    height: 400px;
+    margin-left: 20px;
+  }
+
+  .titlep1 h2 {
+    margin-bottom: 15px;
+  }
+
+  .description {
+    margin-bottom: 25px;
+  }
+
+  .icons2 {
+    margin-bottom: 20px;
+  }
+
+  .img7 {
+    margin-right: 15px;
+  }
+
+  .card-about {
+    margin-left: 7vw;
+    margin-right: 5vw;
+    margin-bottom: 50px;
+  }
+
+  .title-about {
+    padding-top: 15px;
+  }
+
+  .about-text {
+    margin-top: 55px;
+  }
+
+  .open-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+  }
+
+  .horizontal {
+    display: flex;
+    flex-direction: row;
+    margin-left: 9vw;
+  }
+
+  .background-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerxx {
+    display: flex;
+    flex-direction: column;
+    height: 680px;
+    justify-content: center;
+    padding-bottom: 90px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  form ul {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  form textarea {
+    margin-left: 9px;
+  }
+
+  .contact-par {
+    margin-left: 33vw;
+    margin-right: 33vw;
+    line-height: 200%;
+    font-size: 20px;
   }
 }
 
