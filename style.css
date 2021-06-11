@@ -553,6 +553,10 @@ form textarea {
     line-height: 200%;
     font-size: 20px;
   }
+
+  .contact-title {
+    margin-top: 100px;
+  }
 }
 
 @media screen and (max-width: 922px) {
