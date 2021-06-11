@@ -370,12 +370,20 @@ form textarea {
   transition: width 2s, height 2s, background-color 2s, transform 2s;
   background: #6070ff;
   color: white;
-  transform: rotate(360deg);
+  width: 30%;
 }
 
-@media only screen and (min-width: 922px) {
+nav {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
   .toggleNav {
     display: none;
+  }
+
+  nav {
+    display: flex;
   }
 
   nav ul {
@@ -552,15 +560,14 @@ form textarea {
     margin-right: 33vw;
     line-height: 200%;
     font-size: 20px;
+    margin-bottom: 0px;
   }
 
   .contact-title {
     margin-top: 100px;
   }
-}
 
-@media screen and (max-width: 922px) {
-  nav {
+  .barxx {
     display: none;
   }
 }
