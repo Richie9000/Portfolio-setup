@@ -2,12 +2,13 @@
   padding-inline-start: 0;
 }
 
+body {
+  margin-right: 20px;
+}
+
 .backimg {
-  display: flex;
   background: url(./img/header-shapes\ mobile@2x.svg) no-repeat top/cover;
   height: 100vh;
-  justify-content: center;
-  flex-direction: column;
   padding-bottom: 100px;
 }
 
@@ -24,33 +25,36 @@
 .icons {
   display: flex;
   flex-direction: row;
-  flex: 1 1 140px;
   justify-content: space-between;
-  position: relative;
   list-style: none;
   padding-left: 24px;
   text-decoration: none;
 }
 
 .active {
-  font-family: Poppins, sans-serif;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 52px;
-  text-align: left;
-  color: #6070ff;
-  margin-left: 10px;
+  line-height: 100px;
+  margin-left: 50px;
 }
 
 h1 {
   font-family: Poppins, sans-serif;
-  font-size: 48px;
+  font-size: 30px;
   font-style: normal;
-  font-weight: bold;
-  line-height: 52px;
+  font-weight: bolder;
+  line-height: 60px;
   text-align: left;
   padding: 158px 24px 0 24px;
+  color: #344563;
+}
+
+.parax {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 24px 0 24px;
+  color: #344563;
 }
 
 .para {
@@ -98,14 +102,12 @@ a {
   background: #fff;
   border-radius: 20px;
   padding-bottom: 20px;
-  margin: 0 24px;
+  margin: 60px 24px 60px 24px;
 }
 
 .image-section {
   display: grid;
   justify-items: center;
-  margin-top: 105px;
-  margin-bottom: 20px;
 }
 
 .image-section img {
@@ -212,7 +214,7 @@ a {
   font-weight: bold;
   line-height: 52px;
   text-align: left;
-  padding: 158px 24px 0 24px;
+  padding: 10px 24px 0 24px;
 }
 
 .para-about {
@@ -226,20 +228,6 @@ a {
 }
 
 .card-w2 {
-  background: #fff;
-  border-radius: 20px;
-  padding-bottom: 20px;
-  margin: 0 24px;
-}
-
-.card-w3 {
-  background: #fff;
-  border-radius: 20px;
-  padding-bottom: 20px;
-  margin: 0 24px;
-}
-
-.card-w4 {
   background: #fff;
   border-radius: 20px;
   padding-bottom: 20px;
@@ -274,7 +262,7 @@ a {
 .main-menu p {
   font-family: Poppins, sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bolder;
   font-size: 20px;
   line-height: 24px;
   align-items: center;
@@ -325,6 +313,13 @@ a {
   margin-bottom: 50px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
 form input {
   display: flex;
   margin: 15px 15px 15px 25px;
@@ -341,8 +336,8 @@ form input {
 
 .contact-title h4 {
   text-align: center;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: bolder;
   color: white;
   font-family: Poppins, sans-serif;
   margin-top: 20px;
@@ -351,6 +346,7 @@ form input {
 
 form ul {
   text-decoration: none;
+  list-style: none;
 }
 
 form textarea {
@@ -381,4 +377,224 @@ form textarea {
 .barxx {
   display: flex;
   justify-content: center;
+}
+
+.btn-transition:hover {
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+  background: #6070ff;
+  color: white;
+  width: 30%;
+}
+
+nav {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .toggleNav {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  nav ul li {
+    margin: 10px;
+    padding: 10px;
+    font-family: Poppins, sans-serif;
+    margin-right: 70px;
+    font-size: 120%;
+  }
+
+  nav ul li a {
+    color: #344563;
+  }
+
+  .br {
+    display: none;
+  }
+
+  .container {
+    margin-left: 13vw;
+    margin-right: 32vw;
+  }
+
+  .h1 {
+    line-height: 60px;
+    letter-spacing: 0.38px;
+  }
+
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    list-style: none;
+    text-decoration: none;
+    padding-top: 20px;
+    align-items: flex-start;
+    width: 180px;
+  }
+
+  .connect {
+    font-size: 20px;
+  }
+
+  .card-w1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 496px;
+    width: 1156px;
+    margin-top: 142px;
+    margin-bottom: 140px;
+    margin-left: 8vw;
+  }
+
+  .image-section img {
+    width: 32vw;
+    margin-top: 70px;
+  }
+
+  .card-w2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 496px;
+    width: 1156px;
+    margin-top: 142px;
+    margin-bottom: 140px;
+    margin-left: 8vw;
+  }
+
+  .about-myself {
+    display: grid;
+    background: url(./img/about.png) no-repeat top/cover;
+    grid-template-columns: 50% 50%;
+    border-top: 1px solid white;
+    list-style: none;
+  }
+
+  .card-img {
+    margin-bottom: 55px;
+    margin-left: 25px;
+  }
+
+  .card-text {
+    height: 400px;
+    margin-left: 20px;
+    margin-top: 70px;
+  }
+
+  .titlep1 h2 {
+    margin-bottom: 15px;
+  }
+
+  .description {
+    margin-bottom: 25px;
+  }
+
+  .icons2 {
+    margin-bottom: 20px;
+  }
+
+  .card-about {
+    margin-left: 7vw;
+    margin-right: 5vw;
+    margin-bottom: 50px;
+  }
+
+  .title-about {
+    padding-top: 15px;
+  }
+
+  .about-text {
+    margin-top: 55px;
+  }
+
+  .open-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+  }
+
+  .horizontal {
+    display: flex;
+    flex-direction: row;
+    margin-left: 9vw;
+  }
+
+  .background-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerxx {
+    display: flex;
+    flex-direction: column;
+    height: 680px;
+    justify-content: center;
+    padding-bottom: 90px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  form ul {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  form textarea {
+    margin-left: 9px;
+  }
+
+  .contact-par {
+    margin-left: 33vw;
+    margin-right: 33vw;
+    line-height: 200%;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .contact-title {
+    margin-top: 100px;
+  }
+
+  .barxx {
+    display: none;
+  }
+
+  .img7 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 4vw;
+    border-radius: 10px;
+  }
+
+  .backimg {
+    background: url(./img/backimgdesk.png) no-repeat top/cover;
+    height: 100vh;
+    padding-bottom: 100px;
+  }
+
+  .parax {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
