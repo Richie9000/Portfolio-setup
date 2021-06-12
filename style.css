@@ -2,6 +2,10 @@
   padding-inline-start: 0;
 }
 
+body {
+  margin-right: 20px;
+}
+
 .backimg {
   background: url(./img/header-shapes\ mobile@2x.svg) no-repeat top/cover;
   height: 100vh;
