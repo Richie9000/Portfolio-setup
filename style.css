@@ -500,10 +500,6 @@ nav {
     margin-bottom: 20px;
   }
 
-  .img7 {
-    margin-right: 15px;
-  }
-
   .card-about {
     margin-left: 7vw;
     margin-right: 5vw;
@@ -570,7 +566,7 @@ nav {
     margin-right: 33vw;
     line-height: 200%;
     font-size: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .contact-title {
