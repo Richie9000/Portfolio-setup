@@ -2,7 +2,7 @@
 
 # Portfolio setup
 
-> First 2 sections of portfolio project.
+> Portfolio project.
 
 👤 **Author1**
 
