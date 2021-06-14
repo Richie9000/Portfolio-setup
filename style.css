@@ -1,11 +1,9 @@
 * {
   padding-inline-start: 0;
 }
-
-body {
-  margin-right: 20px;
+.containerp {
+  height: 86vh;
 }
-
 .backimg {
   background: url(./img/header-shapes\ mobile@2x.svg) no-repeat top/cover;
   height: 100vh;
@@ -99,6 +97,13 @@ a {
 }
 
 .card-w1 {
+  background: #fff;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  margin: 60px 24px 60px 24px;
+}
+
+.card-w1b {
   background: #fff;
   border-radius: 20px;
   padding-bottom: 20px;
@@ -232,6 +237,7 @@ a {
   border-radius: 20px;
   padding-bottom: 20px;
   margin: 0 24px;
+  margin-bottom: 5vh;
 }
 
 .open-menu {
@@ -355,7 +361,7 @@ form textarea {
   border-radius: 8px;
   text-decoration: none;
   padding: 15px 0 0 28px;
-  margin-left: 24px;
+  margin-left: 2vw;
 }
 
 .background-div {
@@ -383,7 +389,8 @@ form textarea {
   transition: width 2s, height 2s, background-color 2s, transform 2s;
   background: #6070ff;
   color: white;
-  width: 30%;
+  width: 24%;
+  margin-right: 12px;
 }
 
 nav {
@@ -451,9 +458,22 @@ nav {
     align-items: center;
     height: 496px;
     width: 1156px;
-    margin-top: 142px;
     margin-bottom: 140px;
     margin-left: 4vw;
+  }
+
+  .card-w1b {
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 496px;
+    width: 1156px;
+    margin-bottom: 140px;
+    margin-left: 4vw;
+    margin-top: 35vh;
   }
 
   .image-section img {
@@ -468,8 +488,7 @@ nav {
     align-items: center;
     height: 496px;
     width: 1156px;
-    margin-top: 142px;
-    margin-bottom: 140px;
+    margin-bottom: 15vh;
     margin-left: 4vw;
   }
 
