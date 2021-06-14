@@ -453,7 +453,7 @@ nav {
     width: 1156px;
     margin-top: 142px;
     margin-bottom: 140px;
-    margin-left: 8vw;
+    margin-left: 4vw;
   }
 
   .image-section img {
@@ -470,7 +470,7 @@ nav {
     width: 1156px;
     margin-top: 142px;
     margin-bottom: 140px;
-    margin-left: 8vw;
+    margin-left: 4vw;
   }
 
   .about-myself {
@@ -596,5 +596,9 @@ nav {
   .parax {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .containerp {
+    height: 600px;
   }
 }
