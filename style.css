@@ -23,13 +23,21 @@
 }
 
 .overlay a {
-  padding: 18px;
   text-decoration: none;
+  font-family: Popins, sans-serif;
   font-size: 28px;
-  font-weight: bolder;
+  font-weight: 600;
   color: white;
   display: block;
   transition: 0.3s;
+}
+
+.overlay a:nth-child(1) {
+  padding: 10px 0 20px 20px;
+}
+
+.overlay a:nth-child(1n + 2) {
+  padding: 20px 20px;
 }
 
 .overlay a:hover,
@@ -39,8 +47,8 @@
 
 .overlay .closebtn {
   position: absolute;
-  top: 2px;
-  right: 4px;
+  top: 20px;
+  right: 35px;
   font-size: 20px;
 }
 
