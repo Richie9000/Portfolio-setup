@@ -15,6 +15,7 @@
 
       gtag("config", "G-WWX8TJ3E8H");
     </script>
+    <script src="script.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,9 +27,20 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#work" onclick="closeNav()">Portfolio</a>
+        <a href="#about" onclick="closeNav()">About</a>
+        <a href="#contact" onclick="closeNav()">Contact</a>
+      </div>
+    </div>
+
     <header class="top">
       <a class="active" href="#"><img src="img/Mylogo.png" alt="" /></a>
-      <a href="#" class="toggleNav">☰</a>
+      <a href="#" class="toggleNav" onclick="openNav()">☰</a>
       <nav>
         <ul>
           <li><a href="#">Portfolio</a></li>
@@ -90,7 +102,7 @@
           </div>
         </section>
       </div>
-      <ul class="works">
+      <ul class="works" id="work">
         <li class="card-w1b">
           <div class="card-img">
             <div class="image-section">
@@ -247,7 +259,7 @@
           </div>
         </li>
       </ul>
-      <section class="about-myself">
+      <section class="about-myself" id="about">
         <div class="card-about">
           <div class="title-about">
             <p>
@@ -332,7 +344,7 @@
           </ul>
         </div>
       </section>
-      <section class="contactimg">
+      <section class="contactimg" id="contact">
         <div class="background-div">
           <div class="containerxx">
             <div class="contact-title">
