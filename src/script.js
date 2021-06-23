@@ -104,8 +104,43 @@ for (let i = 0; i < projects.length; i++) {
   const h2Title = document.createElement('h2');
   h2Title.innerHTML = projects[i].name;
   divLiPTitle.appendChild(h2Title);
-  
+  const ulDescription = document.createElement('ul');
+  ulDescription.className = 'description';
+  divLiProject.appendChild(ulDescription);
+  let snipLi = document.createElement('li');
+  snipLi.className = 'snip1';
+  ulDescription.appendChild(snipLi);
+  snipLi = document.createElement('li');
+  snipLi.className = 'snip2';
+  ulDescription.appendChild(snipLi);
+  snipLi = document.createElement('li');
+  snipLi.className = 'snip3';
+  ulDescription.appendChild(snipLi);
+  const paraDiv = document.createElement('div');
+  paraDiv.className = 'para';
+  divLiCard.appendChild(paraDiv);
+  const para = document.createElement('p');
+  para.textContent = projects[i].description;
+  paraDiv.appendChild(para);
+  const ulIcons = document.createElement('ul');
+  ulIcons.className = 'icons2';
+  divLiCard.appendChild(ulIcons);
+  let liIconsCard = document.createElement('li');
+  liIconsCard.textContent = projects[i].tag1;
+  ulIcons.appendChild(liIconsCard);
+  liIconsCard = document.createElement('li');
+  liIconsCard.textContent = projects[i].tag2;
+  ulIcons.appendChild(liIconsCard);
+  liIconsCard = document.createElement('li');
+  liIconsCard.textContent = projects[i].tag3;
+  ulIcons.appendChild(liIconsCard);
+  const cardButton = document.createElement('button');
+  cardButton.type = 'button';
+  cardButton.className = 'btn btn-transition';
+  cardButton.textContent = 'See project';
+  divLiCard.appendChild(cardButton);
 }
+
 
 
 
