@@ -74,6 +74,7 @@ const projects = [
 ];
 
 const ulContainer = document.querySelector('.works');
+const popupButton = document.querySelectorAll('.btn-transition');
 
 for (let i = 0; i < projects.length; i++) {
   
@@ -139,11 +140,18 @@ for (let i = 0; i < projects.length; i++) {
   cardButton.className = 'btn btn-transition';
   cardButton.textContent = 'See project';
   divLiCard.appendChild(cardButton);
+
+  // Popup
+  const popup = document.createElement('section');
+  popup.className = 'popup';
+  document.body.appendChild(popup);
+  const popupTitle = document.createElement('h2');
+  popupTitle.className = 'titlep1';
+  popup.appendChild(popupTitle);
 }
 
-
-
-
-
-
-
+popupButton.forEach((item) => {
+  item.addEventListener('click', function() {
+    item.style.display = 'block';
+  });
+})
