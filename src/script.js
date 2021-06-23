@@ -1,13 +1,16 @@
 // Responsive menu
+const menu = document.querySelector('.overlay');
+
 function openNav() {
   document.getElementById('myNav').style.height = '100%';
 }
-openNav();
 
 function closeNav() {
   document.getElementById('myNav').style.height = '0%';
 }
-closeNav();
+
+menu.addEventListener('click', openNav);
+menu.addEventListener('click', closeNav);
 
 //Pop up
 
@@ -69,4 +72,43 @@ const projects = [
     linkSource: 'https://richie9000.github.io/Portfolio-setup/',
   },
 ];
+
+const ulContainer = document.querySelector('.works');
+
+for (let i = 0; i < projects.length; i++) {
+  
+  const liCard = document.createElement('li');
+  liCard.className = 'card-w1';
+  ulContainer.appendChild(liCard);
+  const divLi = document.createElement('div');
+  divLi.className = 'card-img';
+  liCard.appendChild(divLi);
+  const divImg = document.createElement('div');
+  divImg.className = 'image-section';
+  divLi.appendChild(divImg);
+  const aLi = document.createElement('a');
+  aLi.href = '#';
+  divImg.appendChild(aLi);
+  const imgLi = document.createElement('img');
+  imgLi.src = projects[i].image;
+  aLi.appendChild(imgLi);
+  const divLiCard = document.createElement('div');
+  divLiCard.className = 'card-text';
+  liCard.appendChild(divLiCard);
+  const divLiProject = document.createElement('div');
+  divLiProject.className = 'project';
+  divLiCard.appendChild(divLiProject);
+  const divLiPTitle = document.createElement('div');
+  divLiPTitle.className = 'titlep1';
+  divLiProject.appendChild(divLiPTitle);
+  const h2Title = document.createElement('h2');
+  h2Title.innerHTML = projects[i].name;
+  divLiPTitle.appendChild(h2Title);
+  
+}
+
+
+
+
+
 
