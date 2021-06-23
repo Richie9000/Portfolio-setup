@@ -74,7 +74,7 @@ const projects = [
 ];
 
 const ulContainer = document.querySelector('.works');
-const popupButton = document.querySelectorAll('.btn-transition');
+let popup;
 
 for (let i = 0; i < projects.length; i++) {
   
@@ -137,12 +137,12 @@ for (let i = 0; i < projects.length; i++) {
   ulIcons.appendChild(liIconsCard);
   const cardButton = document.createElement('button');
   cardButton.type = 'button';
-  cardButton.className = 'btn btn-transition';
+  cardButton.className = 'btn btn-transition popup-btn';
   cardButton.textContent = 'See project';
   divLiCard.appendChild(cardButton);
 
   // Popup
-  const popup = document.createElement('section');
+  popup = document.createElement('section');
   popup.className = 'popup';
   document.body.appendChild(popup);
   const popupTitle = document.createElement('h2');
@@ -150,8 +150,11 @@ for (let i = 0; i < projects.length; i++) {
   popup.appendChild(popupTitle);
 }
 
+const popupButton = document.querySelectorAll('.popup-btn');
+
+
 popupButton.forEach((item) => {
   item.addEventListener('click', function() {
-    item.style.display = 'block';
+    popup.style.display = 'block';
   });
 })
