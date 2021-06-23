@@ -2,6 +2,11 @@
   padding-inline-start: 0;
 }
 
+/* .hero {
+  background: #f7f7f9;
+  position: relative;
+} */
+
 .overlay {
   height: 0;
   width: 100%;
@@ -55,6 +60,13 @@
   font-size: 30px;
 }
 
+.project-pop .closebtn-pop {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 30px;
+}
+
 .containerp {
   height: 86vh;
 }
@@ -85,8 +97,14 @@
 }
 
 .active {
+  font-family: Poppins, sans-serif;
   line-height: 100px;
   margin-left: 50px;
+  margin-top: 5vh;
+  text-decoration: none;
+  line-height: 20px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 h1 {
@@ -125,8 +143,8 @@ h1 {
 }
 
 .top .toggleNav {
-  margin-right: 20px;
-  margin-top: 15px;
+  margin-right: 10vw;
+  margin-top: 3vh;
   font-size: 200%;
   text-decoration: none;
 }
@@ -229,6 +247,20 @@ h1 {
   margin: 15px 26px;
 }
 
+.btn-pop {
+  padding: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 10px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  background-color: #fff;
+  margin: 15px 26px;
+}
+
 .description {
   display: flex;
   margin: 0 16px;
@@ -285,6 +317,22 @@ h1 {
 }
 
 .card-w2 {
+  background: #fff;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  margin: 0 24px;
+  margin-bottom: 5vh;
+}
+
+.card-w3 {
+  background: #fff;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  margin: 0 24px;
+  margin-bottom: 5vh;
+}
+
+.card-w4 {
   background: #fff;
   border-radius: 20px;
   padding-bottom: 20px;
@@ -534,6 +582,31 @@ nav {
   }
 
   .card-w2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 496px;
+    width: 1156px;
+    margin-bottom: 15vh;
+    margin-left: 4vw;
+  }
+
+  .card-w3 {
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 496px;
+    width: 1156px;
+    margin-bottom: 140px;
+    margin-left: 4vw;
+    margin-top: 35vh;
+  }
+
+  .card-w4 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
