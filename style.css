@@ -97,7 +97,6 @@
   margin-left: 50px;
   margin-top: 5vh;
   text-decoration: none;
-  line-height: 20px;
   font-weight: 700;
   font-size: 20px;
 }
@@ -528,11 +527,13 @@ nav {
   font-size: 40px;
   font-weight: 700;
 }
+
 .popup-title {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 10px;
 }
+
 .popup .description {
   flex-basis: 100%;
 }

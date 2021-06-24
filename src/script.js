@@ -12,8 +12,6 @@ function closeNav() {
 menu.addEventListener('click', openNav);
 menu.addEventListener('click', closeNav);
 
-//Pop up
-
 const projects = [
   {
     name: 'Topic',
