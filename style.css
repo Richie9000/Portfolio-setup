@@ -207,10 +207,12 @@ h1 {
   display: flex;
   flex-direction: row;
   padding-left: 16px;
+  flex-wrap: wrap;
+  width: 75%;
+  margin-left: 2vw;
 }
 
 .icons2 li {
-  text-align: center;
   list-style: none;
   font-family: Poppins, sans-serif;
   font-style: normal;
@@ -219,12 +221,10 @@ h1 {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
-  display: flex;
-  align-items: center;
   padding: 4px 12px;
   background: #ebebff;
   border-radius: 8px;
-  margin-right: 8px;
+  margin: 5px;
 }
 
 .btn {
@@ -508,6 +508,7 @@ nav {
   background-color: white;
   padding: 5%;
   border-radius: 20px;
+  height: 125vh;
 }
 
 .popup-img {
@@ -524,7 +525,7 @@ nav {
 }
 
 .popup .popup-title h2 {
-  font-size: 40px;
+  font-size: 6vw;
   font-weight: 700;
 }
 
@@ -598,7 +599,7 @@ nav {
     background-color: white;
     padding: 5%;
     border-radius: 20px;
-    height: 130%;
+    height: 165vh;
   }
 
   .buttonwraper {
@@ -648,6 +649,11 @@ nav {
     padding-top: 20px;
     align-items: flex-start;
     width: 180px;
+  }
+
+  .popup .popup-title h2 {
+    font-size: 3vw;
+    font-weight: 700;
   }
 
   .connect {
