@@ -93,7 +93,6 @@
 
 .active {
   font-family: Poppins, sans-serif;
-  line-height: 100px;
   margin-left: 50px;
   margin-top: 5vh;
   text-decoration: none;
@@ -528,11 +527,13 @@ nav {
   font-size: 40px;
   font-weight: 700;
 }
+
 .popup-title {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 10px;
 }
+
 .popup .description {
   flex-basis: 100%;
 }
@@ -584,8 +585,13 @@ nav {
     display: none;
   }
 
+  .popup-div-desktop {
+    display: none;
+  }
+
   .para {
-    width: 60%;
+    width: 90%;
+    display: flex;
   }
 
   .popwrap {
