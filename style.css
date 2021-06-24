@@ -585,7 +585,7 @@ nav {
     display: none;
   }
 
-  .popup-div-desktop {
+  .btn-popdesk {
     display: none;
   }
 
@@ -603,10 +603,6 @@ nav {
 
   .buttonwraper {
     display: flex;
-  }
-
-  .popup-div-desktop {
-    display: none;
   }
 
   nav {

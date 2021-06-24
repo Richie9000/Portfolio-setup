@@ -12,8 +12,7 @@ function closeNav() {
 menu.addEventListener('click', openNav);
 menu.addEventListener('click', closeNav);
 
-//Pop up
-
+// Pop up
 const projects = [
   {
     name: 'Topic',
@@ -78,8 +77,7 @@ const projects = [
 
 const ulContainer = document.querySelector('.works');
 
-for (let i = 0; i < projects.length; i++) {
-  
+for (let i = 0; i < projects.length; i += 1) {
   const liCard = document.createElement('li');
   liCard.className = 'card-w1';
   ulContainer.appendChild(liCard);
@@ -146,15 +144,7 @@ for (let i = 0; i < projects.length; i++) {
 
 const containerPopup = document.querySelector('.popup');
 const openPopup = document.querySelectorAll('.popup-btn');
-const infoPopup = {
-  title: 'Project name goes here',
-  language: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-  img: 'assets/img/Project2.png',
-  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> <br>
-  Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.`,
-  liveUrl: '#',
-  seeUrl: '#',
-};
+
 
 const contentPopup = `<div class="popwrap">
 <img src="./img/Disabled.png" class="popupclose" alt="Image">
@@ -203,7 +193,7 @@ const contentPopup = `<div class="popwrap">
   </div>
 </div>
 
-</div>`
+</div>`;
 
 function PopupClose() {
   containerPopup.innerHTML -= contentPopup;
@@ -213,10 +203,8 @@ function PopupClose() {
 function PopupOpen() {
   containerPopup.innerHTML += contentPopup;
   containerPopup.style.display = 'block';
-
   const closePopup = document.querySelector('.popupclose');
   closePopup.addEventListener('click', PopupClose);
- 
 }
 
 // Popup Events
