@@ -145,7 +145,6 @@ for (let i = 0; i < projects.length; i += 1) {
 const containerPopup = document.querySelector('.popup');
 const openPopup = document.querySelectorAll('.popup-btn');
 
-
 const contentPopup = `<div class="popwrap">
 <img src="./img/Disabled.png" class="popupclose" alt="Image">
 <div class="titlep1 popup-title">
