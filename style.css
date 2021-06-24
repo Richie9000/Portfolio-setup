@@ -55,6 +55,13 @@
   font-size: 30px;
 }
 
+.project-pop .closebtn-pop {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 30px;
+}
+
 .containerp {
   height: 86vh;
 }
@@ -85,8 +92,13 @@
 }
 
 .active {
-  line-height: 100px;
+  font-family: Poppins, sans-serif;
   margin-left: 50px;
+  margin-top: 5vh;
+  text-decoration: none;
+  line-height: 20px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 h1 {
@@ -125,8 +137,8 @@ h1 {
 }
 
 .top .toggleNav {
-  margin-right: 20px;
-  margin-top: 15px;
+  margin-right: 10vw;
+  margin-top: 3vh;
   font-size: 200%;
   text-decoration: none;
 }
@@ -195,10 +207,12 @@ h1 {
   display: flex;
   flex-direction: row;
   padding-left: 16px;
+  flex-wrap: wrap;
+  width: 75%;
+  margin-left: 2vw;
 }
 
 .icons2 li {
-  text-align: center;
   list-style: none;
   font-family: Poppins, sans-serif;
   font-style: normal;
@@ -207,15 +221,27 @@ h1 {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
-  display: flex;
-  align-items: center;
   padding: 4px 12px;
   background: #ebebff;
   border-radius: 8px;
-  margin-right: 8px;
+  margin: 5px;
 }
 
 .btn {
+  padding: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 10px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  background-color: #fff;
+  margin: 15px 26px;
+}
+
+.btn-pop {
   padding: 10px;
   border: 1px solid #6070ff;
   border-radius: 10px;
@@ -285,6 +311,22 @@ h1 {
 }
 
 .card-w2 {
+  background: #fff;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  margin: 0 24px;
+  margin-bottom: 5vh;
+}
+
+.card-w3 {
+  background: #fff;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  margin: 0 24px;
+  margin-bottom: 5vh;
+}
+
+.card-w4 {
   background: #fff;
   border-radius: 20px;
   padding-bottom: 20px;
@@ -449,9 +491,119 @@ nav {
   display: none;
 }
 
+.popup {
+  display: none;
+  font-size: 0%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80vw;
+  padding: 10%;
+  background: rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+}
+
+.popwrap {
+  background-color: white;
+  padding: 5%;
+  border-radius: 20px;
+  height: 125vh;
+}
+
+.popup-img {
+  width: 100%;
+  height: 300px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+
+.popup .titlep1 {
+  flex-basis: 100%;
+}
+
+.popup .popup-title h2 {
+  font-size: 6vw;
+  font-weight: 700;
+}
+
+.popup-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.popup .description {
+  flex-basis: 100%;
+}
+
+.popupclose {
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  top: 11.5vw;
+  right: 11.8vw;
+}
+
+.popup-btns {
+  display: flex;
+  width: 100vw;
+}
+
+.popupinner {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonwraper {
+  display: none;
+  flex-direction: column;
+  width: 40%;
+}
+
+.btn-popdesk {
+  padding: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 10px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 24px;
+  color: #7f8cff;
+  overflow: hidden;
+}
+
+.popup-div-desktop {
+  display: flex;
+  justify-content: space-around;
+}
+
 @media only screen and (min-width: 992px) {
   .toggleNav {
     display: none;
+  }
+
+  .btn-popdesk {
+    display: none;
+  }
+
+  .para {
+    width: 90%;
+    display: flex;
+  }
+
+  .popwrap {
+    background-color: white;
+    padding: 5%;
+    border-radius: 20px;
+    height: 165vh;
+  }
+
+  .buttonwraper {
+    display: flex;
   }
 
   nav {
@@ -499,6 +651,11 @@ nav {
     width: 180px;
   }
 
+  .popup .popup-title h2 {
+    font-size: 3vw;
+    font-weight: 700;
+  }
+
   .connect {
     font-size: 20px;
   }
@@ -544,6 +701,31 @@ nav {
     margin-left: 4vw;
   }
 
+  .card-w3 {
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 496px;
+    width: 1156px;
+    margin-bottom: 140px;
+    margin-left: 4vw;
+    margin-top: 35vh;
+  }
+
+  .card-w4 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 496px;
+    width: 1156px;
+    margin-bottom: 15vh;
+    margin-left: 4vw;
+  }
+
   .about-myself {
     display: grid;
     background: url(./img/about.png) no-repeat top/cover;
@@ -561,10 +743,6 @@ nav {
     height: 400px;
     margin-left: 20px;
     margin-top: 70px;
-  }
-
-  .titlep1 h2 {
-    margin-bottom: 15px;
   }
 
   .description {
