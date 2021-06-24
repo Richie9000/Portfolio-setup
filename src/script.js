@@ -19,7 +19,7 @@ const projects = [
     feature: 'CANOPY',
     background: 'Back End Dev',
     year: '2015',
-    image: '/img/SnapshootPortfoliox.png',
+    image: './img/SnapshootPortfoliox.png',
     description:
       'A daily selection of privately personalized reads; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum temporibus minus in eligendi numquam, maiores fuga minima quia corporis soluta cupiditate dolores eum aliquam recusandae perspiciatis totam nisi natus est.no accounts or sign-ups required.',
     tag1: 'html',
@@ -36,7 +36,7 @@ const projects = [
     feature: 'FACEBOOK',
     background: 'Full Stack Dev',
     year: '2015',
-    image: '/img/SnapshootPortfolio4.png',
+    image: './img/SnapshootPortfolio4.png',
     description:
       'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     tag1: 'html',
