@@ -1,4 +1,3 @@
-
 // Responsive menu
 const menu = document.querySelector('.overlay');
 
@@ -211,23 +210,3 @@ function PopupOpen() {
 openPopup.forEach((button) => {
   button.addEventListener('click', PopupOpen);
 });
-
-// Forms validation
-  const form = document.getElementById('contact-form');
-  const errorMess = document.createElement('small');
-  errorMess.className = 'error';
-  errorMess.textContent ='Only lower case dear internet user';
-  form.appendChild(errorMess);
-  const errorElement = document.querySelector('.error');
-  
-  const validation = (event) => {
-    if (form.elements[1].value === form.elements[1].value.toLowerCase()){
-      errorElement.style.display = 'none';
-    } else {
-      event.preventDefault(); 
-      errorElement.style.display = 'block'
-    }
-  }
-  
-  form.addEventListener('submit', validation);
-
