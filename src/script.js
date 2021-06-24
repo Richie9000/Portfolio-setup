@@ -22,10 +22,13 @@ const projects = [
     year: '2015',
     image: '/img/SnapshootPortfoliox.png',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A daily selection of privately personalized reads; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum temporibus minus in eligendi numquam, maiores fuga minima quia corporis soluta cupiditate dolores eum aliquam recusandae perspiciatis totam nisi natus est.no accounts or sign-ups required.',
     tag1: 'html',
     tag2: 'css',
     tag3: 'javascript',
+    tag4: 'github',
+    tag5: 'ruby',
+    tag6: 'bootstrap',
     linkLive: 'https://richie9000.github.io/Portfolio-setup/',
     linkSource: 'https://richie9000.github.io/Portfolio-setup/',
   },
@@ -74,7 +77,6 @@ const projects = [
 ];
 
 const ulContainer = document.querySelector('.works');
-let popup;
 
 for (let i = 0; i < projects.length; i++) {
   
@@ -142,52 +144,60 @@ for (let i = 0; i < projects.length; i++) {
   divLiCard.appendChild(cardButton);
 }
 
+const containerPopup = document.querySelector('.popup');
+const openPopup = document.querySelectorAll('.popup-btn');
+const infoPopup = {
+  title: 'Project name goes here',
+  language: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  img: 'assets/img/Project2.png',
+  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> <br>
+  Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.`,
+  liveUrl: '#',
+  seeUrl: '#',
+};
 
-const popupButton = document.querySelectorAll('.popup-btn');
-
-const openpopup = () => {
-  popup.classList.toggle('popup')
-  popup.classList.toggle('popup-open')
-  console.log("hello");
-}
-
-popupButton.forEach((item) => {
-  item.addEventListener('click', openpopup);
-})
-
-const popupContent = `<div class="popwrap">
+const contentPopup = `<div class="popwrap">
 <img src="./img/Disabled.png" class="popupclose" alt="Image">
-<div class="titlep1">
-  <h2>Tonic</h2>
+<div class="titlep1 popup-title">
+  <h2>${projects[0].name}</h2>
 
 </div>
 <ul class="description">
-  <li class="snip1">Canopy</li>
-  <li class="snip2">• Back End Dev</li>
-  <li class="snip3">• 2015</li>
+  <li class="snip1">${projects[0].feature}</li>
+  <li class="snip2">• ${projects[0].background}</li>
+  <li class="snip3">• ${projects[0].year}</li>
 </ul>
-<img src="./img/SnapPortfolio.png" alt="Image">
+<img src="${projects[0].image}" class="popup-img" alt="Imagex">
 <div class="popupinner">
   <div class="para">
     <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
+    ${projects[0].description}
     </p>
+    <div class="popup-div-desktop">
+      <button type="button" class="btn-popdesk" href="${projects[0].linkLive}" >
+       See live     
+      </button>
+      <button type="button" class="btn-popdesk" href="${projects[0].linkLive}">
+       See source
+      </button>
   </div>   
+  
   <div class="buttonwraper">
     <ul class="icons2">
-      <li>html</li>
-      <li>Javascript</li>
-      <li>Css</li>
-      <li>Github</li>
-      <li>Ruby</li>
-      <li>Bootstrap</li>
+      <li>${projects[0].tag1}</li>
+      <li>${projects[0].tag2}</li>
+      <li>${projects[0].tag3}</li>
+      <li>${projects[0].tag4}</li>
+      <li>${projects[0].tag5}</li>
+      <li>${projects[0].tag6}</li>
+     
     </ul>
     <div class="popup-btns">
-      <button type="button" class="btn btn-transition">
-        See Live
+      <button type="button" class="btn" href="${projects[0].linkLive}" >
+       See live     
       </button>
-      <button type="button" class="btn btn-transition">
-        See Source
+      <button type="button" class="btn" href="${projects[0].linkLive}">
+       See source
       </button>
     </div>
   </div>
@@ -195,8 +205,21 @@ const popupContent = `<div class="popwrap">
 
 </div>`
 
-// Popup
-popup = document.createElement('section');
-popup.className = 'popup';
-popup.innerHTML = popupContent;
-document.body.appendChild(popup);
+function PopupClose() {
+  containerPopup.innerHTML -= contentPopup;
+  containerPopup.style.display = 'none';
+}
+
+function PopupOpen() {
+  containerPopup.innerHTML += contentPopup;
+  containerPopup.style.display = 'block';
+
+  const closePopup = document.querySelector('.popupclose');
+  closePopup.addEventListener('click', PopupClose);
+ 
+}
+
+// Popup Events
+openPopup.forEach((button) => {
+  button.addEventListener('click', PopupOpen);
+});
