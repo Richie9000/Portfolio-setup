@@ -2,6 +2,10 @@
   padding-inline-start: 0;
 }
 
+.error {
+  display: none;
+}
+
 .overlay {
   height: 0;
   width: 100%;
