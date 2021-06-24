@@ -140,21 +140,63 @@ for (let i = 0; i < projects.length; i++) {
   cardButton.className = 'btn btn-transition popup-btn';
   cardButton.textContent = 'See project';
   divLiCard.appendChild(cardButton);
-
-  // Popup
-  popup = document.createElement('section');
-  popup.className = 'popup';
-  document.body.appendChild(popup);
-  const popupTitle = document.createElement('h2');
-  popupTitle.className = 'titlep1';
-  popup.appendChild(popupTitle);
 }
+
 
 const popupButton = document.querySelectorAll('.popup-btn');
 
+const openpopup = () => {
+  popup.classList.toggle('popup')
+  popup.classList.toggle('popup-open')
+  console.log("hello");
+}
 
 popupButton.forEach((item) => {
-  item.addEventListener('click', function() {
-    popup.style.display = 'block';
-  });
+  item.addEventListener('click', openpopup);
 })
+
+const popupContent = `<div class="popwrap">
+<img src="./img/Disabled.png" class="popupclose" alt="Image">
+<div class="titlep1">
+  <h2>Tonic</h2>
+
+</div>
+<ul class="description">
+  <li class="snip1">Canopy</li>
+  <li class="snip2">• Back End Dev</li>
+  <li class="snip3">• 2015</li>
+</ul>
+<img src="./img/SnapPortfolio.png" alt="Image">
+<div class="popupinner">
+  <div class="para">
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
+    </p>
+  </div>   
+  <div class="buttonwraper">
+    <ul class="icons2">
+      <li>html</li>
+      <li>Javascript</li>
+      <li>Css</li>
+      <li>Github</li>
+      <li>Ruby</li>
+      <li>Bootstrap</li>
+    </ul>
+    <div class="popup-btns">
+      <button type="button" class="btn btn-transition">
+        See Live
+      </button>
+      <button type="button" class="btn btn-transition">
+        See Source
+      </button>
+    </div>
+  </div>
+</div>
+
+</div>`
+
+// Popup
+popup = document.createElement('section');
+popup.className = 'popup';
+popup.innerHTML = popupContent;
+document.body.appendChild(popup);

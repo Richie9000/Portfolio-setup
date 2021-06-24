@@ -2,11 +2,6 @@
   padding-inline-start: 0;
 }
 
-/* .hero {
-  background: #f7f7f9;
-  position: relative;
-} */
-
 .overlay {
   height: 0;
   width: 100%;
@@ -499,11 +494,49 @@ nav {
 
 .popup {
   display: none;
+}
+
+.popup-open {
   position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
   height: 100vh;
+  width: 80vw;
+  padding: 10%;
+  background: rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+  display: block;
+}
+
+.popwrap {
+  background-color: white;
+}
+
+.popup .titlep1 {
+  flex-basis: 100%;
+}
+
+.popup .description {
+  flex-basis: 100%;
+}
+
+.popupclose {
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  top: 9.5vw;
+  right: 5.8vw;
+}
+
+.popup-btns {
+  display: flex;
+}
+
+.popupinner {
+  display: flex;
+}
+
+.buttonwraper {
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 992px) {
