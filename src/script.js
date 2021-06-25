@@ -215,7 +215,7 @@ openPopup.forEach((button) => {
 const form = document.getElementById('contact-form');
 const errorMess = document.createElement('small');
 errorMess.className = 'error';
-errorMess.textContent = 'Only lower case dear internet user';
+errorMess.textContent = 'Only lower case on e-mail input, please.';
 form.appendChild(errorMess);
 const errorElement = document.querySelector('.error');
 const validation = (event) => {
