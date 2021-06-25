@@ -139,7 +139,7 @@ for (let i = 0; i < projects.length; i += 1) {
   cardButton.type = 'button';
   cardButton.className = 'btn btn-transition popup-btn';
   cardButton.textContent = 'See project';
-  divLiCard.appendChild(cardButton); 
+  divLiCard.appendChild(cardButton);
 }
 
 const containerPopup = document.querySelector('.popup');
@@ -218,12 +218,11 @@ errorMess.className = 'error';
 errorMess.textContent = 'Only lower case dear internet user';
 form.appendChild(errorMess);
 const errorElement = document.querySelector('.error');
-  
-const validation = (event) => {
-  if (form.elements[1].value === form.elements[1].value.toLowerCase()){
+  const validation = (event) => {
+  if (form.elements[1].value === form.elements[1].value.toLowerCase()) {
     errorElement.style.display = 'none';
   } else {
-    event.preventDefault(); 
+    event.preventDefault();
     errorElement.style.display = 'block'
   }
 };
