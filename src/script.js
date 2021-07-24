@@ -15,21 +15,20 @@ menu.addEventListener('click', closeNav);
 // Pop up
 const projects = [
   {
-    name: 'Topic',
-    feature: 'CANOPY',
-    background: 'Back End Dev',
+    name: 'To do list',
+    feature: 'Simple to do list',
+    background: 'Front End Dev',
     year: '2015',
-    image: './img/SnapshootPortfoliox.png',
-    description:
-      'A daily selection of privately personalized reads; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum temporibus minus in eligendi numquam, maiores fuga minima quia corporis soluta cupiditate dolores eum aliquam recusandae perspiciatis totam nisi natus est.no accounts or sign-ups required.',
+    image: './img/todolist.png',
+    description:'Simple HTML list of To Do tasks, Set up the project with webpack.',
     tag1: 'html',
     tag2: 'css',
     tag3: 'javascript',
     tag4: 'github',
-    tag5: 'ruby',
-    tag6: 'bootstrap',
-    linkLive: 'https://richie9000.github.io/Portfolio-setup/',
-    linkSource: 'https://richie9000.github.io/Portfolio-setup/',
+    tag5: 'webpack',
+    tag6: 'jest',
+    linkLive: 'https://richie9000.github.io/To-do-list/',
+    linkSource: 'https://richie9000.github.io/To-do-list/',
   },
   {
     name: 'Multi-Post Stories',
@@ -166,7 +165,7 @@ const contentPopup = `<div class="popwrap">
       <button type="button" class="btn-popdesk" href="${projects[0].linkLive}" >
        See live     
       </button>
-      <button type="button" class="btn-popdesk" href="${projects[0].linkLive}">
+      <button type="button" class="btn-popdesk" href="${projects[0].linkSource}">
        See source
       </button>
   </div>   
@@ -185,7 +184,7 @@ const contentPopup = `<div class="popwrap">
       <button type="button" class="btn" href="${projects[0].linkLive}" >
        See live     
       </button>
-      <button type="button" class="btn" href="${projects[0].linkLive}">
+      <button type="button" class="btn" href="${projects[0].linkSource}">
        See source
       </button>
     </div>

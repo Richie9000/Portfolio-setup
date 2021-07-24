@@ -7,7 +7,7 @@
   padding: 15px;
   background: #fd7990;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   border-radius: 5px;
   margin-top: 30px;
@@ -530,7 +530,7 @@ nav {
 
 .popup-img {
   width: 100%;
-  height: 300px;
+  height: auto;
   margin-left: 2.5%;
   margin-right: 2.5%;
   object-fit: cover;
@@ -610,13 +610,6 @@ nav {
   .para {
     width: 90%;
     display: flex;
-  }
-
-  .popwrap {
-    background-color: white;
-    padding: 5%;
-    border-radius: 20px;
-    height: 165vh;
   }
 
   .buttonwraper {
