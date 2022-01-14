@@ -15,35 +15,21 @@ menu.addEventListener('click', closeNav);
 // Pop up
 const projects = [
   {
-    name: 'To do list',
-    feature: 'Simple to do list',
-    background: 'Front End Dev',
-    year: '2015',
-    image: './img/todolist.png',
-    description:'Simple HTML list of To Do tasks, Set up the project with webpack.',
-    tag1: 'html',
-    tag2: 'css',
-    tag3: 'javascript',
-    tag4: 'github',
-    tag5: 'webpack',
-    tag6: 'jest',
-    linkLive: 'https://richie9000.github.io/To-do-list/',
-    linkSource: 'https://richie9000.github.io/To-do-list/',
-  },
-  {
     name: 'Videos',
     feature: ' Youtube broswer web app, created in react. ',
     background: 'Front end Dev',
     year: '2022',
     image: './img/snapshot.png',
     description: "Experimental web app created in React (using class components), user can write a word in the search bar and the app we will render a list of videos related with that word.",
+    tag1: "React",
+    tag2: "CSS",
     tag3: 'javascript', 
     linkLive: 'https://richie9000.github.io/Portfolio-setup/',
     linkSource: 'https://richie9000.github.io/Portfolio-setup/',
   },
   {
     name: 'Pics',
-    feature: 'Searxh web app of images',
+    feature: 'Search web app of images',
     background: 'Front end Dev',
     year: '2022',
     image: 'img/snapshot2.png',
@@ -60,14 +46,27 @@ const projects = [
     feature: 'House deploy in decentraland',
     background: 'Lead Developer',
     year: '2022',
-    image: 'img/facebook-360-project.svg',
+    image: 'img/snapshot3.png',
     description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      'Design, build and deploy a 3d house in decentraland, using typescript, blender, docker',
+    tag1: 'Typescript',
+    tag2: 'Blender',
+    tag3: 'Docker ',
+    linkLive: 'https://richie9000.github.io/Portfolio-setup/',
+    linkSource: 'https://richie9000.github.io/Portfolio-setup/',
+  },  
+  {
+    name: 'To do list',
+    feature: 'Simple to do list',
+    background: 'Front End Dev',
+    year: '2015',
+    image: './img/todolist.png',
+    description:'Simple HTML list of To Do tasks, Set up the project with webpack.',
     tag1: 'html',
     tag2: 'css',
     tag3: 'javascript',
-    linkLive: 'https://richie9000.github.io/Portfolio-setup/',
-    linkSource: 'https://richie9000.github.io/Portfolio-setup/',
+    linkLive: 'https://richie9000.github.io/To-do-list/',
+    linkSource: 'https://richie9000.github.io/To-do-list/',
   },
 ];
 
@@ -131,11 +130,11 @@ for (let i = 0; i < projects.length; i += 1) {
   liIconsCard = document.createElement('li');
   liIconsCard.textContent = projects[i].tag3;
   ulIcons.appendChild(liIconsCard);
-  const cardButton = document.createElement('button');
-  cardButton.type = 'button';
-  cardButton.className = 'btn btn-transition popup-btn';
-  cardButton.textContent = 'See project';
-  divLiCard.appendChild(cardButton);
+  // const cardButton = document.createElement('button');
+  // cardButton.type = 'button';
+  // cardButton.className = 'btn btn-transition popup-btn';
+  // cardButton.textContent = 'See project';
+  // divLiCard.appendChild(cardButton);
 }
 
 const containerPopup = document.querySelector('.popup');
@@ -197,7 +196,7 @@ function PopupClose() {
 
 function PopupOpen() {
   containerPopup.innerHTML += contentPopup;
-  containerPopup.style.display = 'block';
+  containerPopup.style.display = 'inline';
   const closePopup = document.querySelector('.popupclose');
   closePopup.addEventListener('click', PopupClose);
 }
